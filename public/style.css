@@ -1,350 +1,273 @@
-ideo/* import google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
 
-
-/* drop Shadow  */
-body{
-  width:100%;
-  display: flex;
-  flex-direction: column;
+:root {
+  --magenta : rgba(238, 29, 82, 0.9);
+  --cyan : rgb(105, 201, 208);
 }
 
-.header{
-/*   background-color: pink; */
-  display: flex;
-  direction: row;
-  justify-content: space-between;
-/*   margin: 84px; */
-  margin-bottom: 0%;
-  margin-top:5%;
-  margin-left:5%;
-  margin-right:10%;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
 }
 
-#Title{
-/*   background-color: yellow; */
-  font-family: 'Boogaloo', cursive;
-  font-size: 48px;
-  margin-left: 190px;
-  margin-right: 75px;
-  width: 100%;
-  text-align: center;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+}  
+
+div.headerRight {
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+div.headerLeft {
+  width: 18%;
+}
 
-
-.Box{
-  height: 500px;
-  width: 540px;
-  margin: 30px;
+div.headerCenter {
+  width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
-  border-radius: 30px;
-  background: linear-gradient(to bottom right, #EE1D52, #69C9D0);
-  box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
 }
 
-.sucessful{
-  font-family: 'Boogaloo', cursive;
-  display: inline-block;
-  flex-direction:row;
-  background-color: white;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 90px;
-  width: 270px;
+header.redirect {
+    justify-content: center;
 }
 
-#EnteredName{
-  color:#EE1D52;
-}
-
-#submitVideo{
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 25px;
-  color: white;
-}
-
-#UserName{
-/*   margin-top: 10px; */
-  margin-bottom: 20px;
-}
-
-#TikTokURL{
-  margin-bottom: 20px;
-} 
-.Input-Boxes{
-  display:flex;
-  flex-direction: column;
-  margin-top: 18px;
-  width: 72%;
-}
-
-
-label{
-  font-size:16px;
-  font-weight:600;
-  color:white;
-}
-
-input{
-  font-size:16px;
-  border: 2px solid #69C9D0;
-  padding: 10px;
-  border-radius: 18px;
-  height: 35px;
-}
-#MyVideosButton{
-      margin-left: -30%;
-    background-color: #EE1D52;
-    max-width: fit-content;
-}
-
-
-.button{
-  font-family: 'Inter', sans-serif;
-  font-size:20px;
-  text-align: center;
-  align-items:center;
-  color:white;
-  background-color: #EE1D52;
-  opacity: 90%;
-  padding: 15px 40px;
-  border-radius: 10px;
-  # border: radial-gradient(black) 40;
-  box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
-/*   width: 100%; */
-  
-}
-
-
-.main{
-/*   background-color: grey; */
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content:center;
-/*   margin:125px; */
-  height: 700px;
-  justify-content: center;
-/*   margin-left: 361px; */
-/*   margin-right: 361px; */
-  margin-left: 22%;
-    margin-right: 22%;
-    margin-top: 0%;
-}
-
-
-.continuebox{
-  display:flex;
-  justify-content: center;
-  margin-left:10%;
-
-}
-
-#continue{
-  padding: 20px 50px;
-}
-
-@media  (max-width: 900px){
-  .header{
-  width: 80%;
-    margin-left: 10%;
-    min-width: 400px;
-    margin-bottom: 0%;
-    /* max-width: max-content; */
-    max-width: 900px;
-  }
-  #Title{
-    margin-left: 0px;
-    text-align: start;
-    margin-right: 15px;
-}
-  .Box {
-       height: 65%;
-    width: 100%;
-    margin-left: 0%;
-    /* min-width: 400px; */
-    margin-right: 0%;
-    margin-top: -10%;
-}
-  .main{
-   width: 80%;
-    margin-left: 10%;
-  }
-
-  .Emp{
-    display:none;
-  }
-  #Title1{
-/*         background-color: yellow; */
-    font-family: 'Boogaloo', cursive;
+h1 {
     font-size: 48px;
-    margin-left: 0%;
-    margin-right: 58px;
-    width: 100%;
-    text-align: center;
-  }
-  .submittedText{
-    font-family:'Boogaloo', cursive;
+    font-family: "Boogaloo";
+}
+
+/* Slightly altered default h2 tag. */
+h2 {
+    display: block;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 24px;
-    margin-left: 10%;
-    margin-top:-5%;
-    
-  }
+    text-align: center;
 }
 
 
-/*@media (max-width: 750px){
-
- #submitVideo{
-  font-size: 20px;
-  margin-bottom: 25px;
-  color: white;
+span {
+    color: var(--magenta);
 }
 
-#Title{
-  font-size: 32px;
-}
-.button{
-  font-size: 16px;
-  padding: 10px 15px;
-  border-radius: 10px;
-}
-
-  .submittedText{
-  font-size: 20px;
-}
-  
-}*/
-@media (max-width: 480px){
-  body{
-    width:100%;
-    
-  }
-  .header{
-        margin-bottom: 0%;
-    padding: 1px 1px;
-    margin-right: 10%;
-    margin-left: 10%;
-    max-width: 480px;
-
-  }
-  .main{
-    margin-left: 10%;
-    /* height: 30%; */
-    padding: 1px -14px;
-    min-width: 299px;
-    margin-right: 15%;
-    max-width: fit-content;
-  }
-  .Box{
-       margin-top: -10%;
-    padding: 0px 35px;
-  }
-  
-  #Title{
-    font-size: 28px;
-    margin-right: 25%;
-}
-  
-  #MyVideosButton{
-        margin-right: 0%;
-    margin-left: -55%;
-    max-width: fit-content;
-}
-  .Emp{
-    display:none;
-  }
-  #submitVideo{
+button {
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
     font-size: 20px;
-  }
-  .Input-Boxes{
-    font-size:  16px;
-  }
-  #UserName{
-    font-size: 16px;
-  }
-  #TikTokURL{
-    font-size:  16px;
-  }
-  #VideoNickname{
-    font-size: 16px;
-  }
-  .button{
-    font-size: 16px;
-  }
-  .submittedText{
-    font-family: 'Boogaloo', cursive;
-    font-weight:600px;
-    font-size:  18px;
-    margin-left: 0%
-    margin-top:-40%;
-  }
-  #Title1{
-/*     background-color: yellow; */
-    font-family: 'Boogaloo', cursive;
-    font-size: 32px;
-    margin-left: 20%;
-    margin-right: 58px;
-    width: 100%;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
     text-align: center;
-    
+    color: whitesmoke;
+    background-color: var(--magenta);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: var(--cyan);
+}
+
+input {
+    font-weight: 400;
+    font-size: 16px;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 3px 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    border: 1px solid transparent; /* Adding transparent border to avoid weird movement whenever border is added. */
+}
+
+input[type=text]:focus {
+    border: 1px solid turquoise;
+}
+
+label {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.formfields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 390px;
+    width: 390px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-70deg, var(--cyan), 60%, var(--magenta));
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Stage 3 CSS ;*/
+.nickname {
+  color: white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+}
+
+.enabledButton {
+  background-color: var(--magenta);
+}
+
+.disabledButton {
+  background-color: var(--disabledMagenta);
+}
+
+.enabledButton:hover {
+    background-color: var(--cyan);
+}
+
+div.video {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: var(--magenta);
+}
+
+blockquote {
+  border-style: solid;
+  border-color:  var(--magenta);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color:var(--magenta);
+}
+
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.reload,.heart {
+  color: var(--magenta);
+  font-size: 65px;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+
+/* Tablet View */
+@media screen and (max-width:900px) {
+
+  h1 {
+      font-size: 48px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+
+  div.headerRight {
+  width: 30%;
+  justify-content: center;
+  }
+
+  div.headerLeft {
+    display: none;
   }
   
-}/*end media query 480
-
-
-
-/* css for acknowledgement.html */
-
-.submittedText{
-  font-family: 'Boogaloo', cursive;
-  font-weight: 600;
-  font-size: 24px;
-  margin-left:9%;
-  margin-top: -25%;
-}
-#Title1{
-/*   background-color: yellow; */
-    font-family: 'Boogaloo', cursive;
-    font-size: 48px;
-    margin-left: 10%;
-    margin-right: 58px;
-    width: 100%;
-    text-align: center;
-}
-.header1{
-
+  div.headerCenter {
+    width: 50%;
     display: flex;
-    direction: row;
-    justify-content: space-between;
-    /* margin: 84px; */
-    margin-bottom: 0%;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-  padding: 0px 18px;
-    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-#submittedSuccessfully{
-  text-align: center;
-}
-#Video{
-  text-align:center;
-}
-#EnteredName{
-  text-align: center;
-}
-#VideoEntered{
-  display:flex;
-  flex-direction: row;
-  justify-content:center;
+  
 }
 
+/* Mobile View */
+@media screen and (max-width: 700px) {
 
+  h1 {
+      font-size: 32px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+  
+  #app {
+      width: 320px;
+  }
+
+/*   Stage 3  */
+header {
+    justify-content: space-around;
+  }
+
+  div.headerRight {
+    width: 30%;
+    justify-content: center;
+  }
+
+  div.headerLeft {
+    display: none;
+  }
+
+  div.headerCenter {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+}
+
+  
