@@ -6,6 +6,10 @@ addNewButton.addEventListener("click", function(){
   window.location = "tiktokpets.html"; 
 });
 
+playGameButton.addEventListener("click", function(){
+  window.location = "compare.html"; 
+});
+
 // send GET request
 async function sendGetRequest(url) {
   params = {

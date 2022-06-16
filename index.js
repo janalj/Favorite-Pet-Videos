@@ -46,7 +46,7 @@ app.use(function(req, res, next) {
 
 // if no file specified, return the main page
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/public/compare.html");
+  response.sendFile(__dirname + "/public/myVideos.html");
   // send back a list of names, then display them on my videos page
 });
 
